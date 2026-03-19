@@ -1,0 +1,97 @@
+name: 💡 Feature Request
+description: Suggest a new feature or improvement for Dartform
+title: "[Feature]: "
+labels: ["enhancement", "needs triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea that would make Dartform better? We'd love to hear it.
+        
+        Before submitting, please:
+        - ✅ Search [existing issues](https://github.com/Mobterest-Studio/dartform/issues?q=is%3Aissue+label%3Aenhancement) to see if it's already been requested
+        - ✅ Check the [Discussions](https://github.com/Mobterest-Studio/dartform/discussions) tab for similar ideas
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature category
+      description: Which area of Dartform does this relate to?
+      options:
+        - Project management / dashboard
+        - Schema & data modeling
+        - Endpoint generator and tester
+        - Code generation 
+        - Team & seat management
+        - UI / UX improvement
+        - Performance
+        - New module / integration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: What problem does this feature solve? What are you currently unable to do?
+      placeholder: I'm frustrated when... / It would help me if... / Currently there's no way to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the feature you'd like to see. Be as specific as you can.
+      placeholder: I'd like Dartform to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you considered any workarounds or alternative solutions?
+    validations:
+      required: false
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockups or references
+      description: Any sketches, screenshots of similar tools, or reference links that illustrate the idea.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to your workflow?
+      options:
+        - Critical — blocking my use of Dartform
+        - High — I work around it daily
+        - Medium — would be a meaningful improvement
+        - Low — nice to have
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else you'd like to add.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and this has not been requested before
+          required: true
+        - label: I have clearly described the problem this feature solves
+          required: true

@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Ask a question or get help
+    url: https://github.com/Mobterest-Studio/dartform/discussions
+    about: Use GitHub Discussions for general questions, ideas, and community help.
+
+  - name: 📧 Direct support
+    url: mailto:support@dartform.dev
+    about: For subscription, billing, or account issues, email us directly.
+
+  - name: 🌐 Documentation
+    url: https://dartform.dev
+    about: Visit dartform.dev for documentation and release notes.

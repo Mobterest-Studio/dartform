@@ -1,0 +1,130 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behaviour in Dartform
+title: "[Bug]: "
+labels: ["bug", "needs triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug. Please fill in as much detail as possible — it helps us reproduce and fix the issue faster.
+        
+        Before submitting, please:
+        - ✅ Check you're on the [latest release](https://github.com/Mobterest-Studio/dartform/releases/latest)
+        - ✅ Search [existing issues](https://github.com/Mobterest-Studio/dartform/issues) to avoid duplicates
+
+  - type: input
+    id: dartform-version
+    attributes:
+      label: Dartform version
+      description: Found in the app menu → Dartform → About Dartform
+      placeholder: e.g. 1.1.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: macos-version
+    attributes:
+      label: macOS version
+      options:
+        - macOS 15 Sequoia
+        - macOS 14 Sonoma
+        - macOS 13 Ventura
+        - macOS 12 Monterey
+        - Other (specify in additional context)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Mac architecture
+      options:
+        - Apple Silicon (M1 / M2 / M3 / M4)
+        - Intel
+    validations:
+      required: true
+
+  - type: input
+    id: serverpod-version
+    attributes:
+      label: Serverpod version
+      description: The version used in your project's pubspec.yaml
+      placeholder: e.g. 2.1.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: When I do X, Y happens instead of Z...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions to reproduce the behaviour.
+      placeholder: |
+        1. Open Dartform
+        2. Click on '...'
+        3. Observe '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recording
+      description: If applicable, add screenshots or a screen recording to help explain the issue. You can drag and drop files here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console logs or error output
+      description: Any relevant error messages or logs. Wrap in code blocks if pasting text.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that might be relevant — project structure, modules installed, workarounds tried, etc.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I am on the latest version of Dartform
+          required: true
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+        - label: I have provided enough information to reproduce the bug
+          required: true
