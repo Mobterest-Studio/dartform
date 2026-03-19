@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://dartform.dev/assets/logo.png" alt="Dartform Logo" width="80" />
+<img src="dartform_logo.svg" alt="Dartform Logo" width="80" />
 
 # Dartform
 

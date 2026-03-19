@@ -1,0 +1,52 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Sharp futuristic gradients -->
+    <linearGradient id="iconSpeedGrad1" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#7dd3ff;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#38b6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0088cc;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="iconSpeedGrad2" x1="100%" y1="0%" x2="0%" y2="80%">
+      <stop offset="0%" style="stop-color:#38b6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#005577;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="iconMotionBlur" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38b6ff;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#38b6ff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#38b6ff;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="iconTrailFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38b6ff;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#38b6ff;stop-opacity:0.8" />
+    </linearGradient>
+
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sharp Dart - main icon -->
+  <g transform="translate(512, 520) rotate(35) scale(1.7)" filter="url(#glow)">
+    <polygon points="0,-360 260,130 0,-25" fill="url(#iconSpeedGrad1)"/>
+    <polygon points="0,-360 -155,130 0,-25" fill="url(#iconSpeedGrad2)"/>
+    <polygon points="260,130 90,260 0,-25" fill="#0077aa"/>
+    <polygon points="-155,130 -65,260 0,-25" fill="#003d55"/>
+    
+    <!-- Leading edge highlight -->
+    <line x1="0" y1="-360" x2="260" y2="130" stroke="#ffffff" stroke-width="5" opacity="0.7"/>
+    <line x1="0" y1="-360" x2="0" y2="-25" stroke="#7dd3ff" stroke-width="3" opacity="0.5"/>
+    
+    <!-- Glowing tip -->
+    <circle cx="0" cy="-360" r="20" fill="#38b6ff" opacity="0.4"/>
+    <circle cx="0" cy="-360" r="10" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+</svg>
