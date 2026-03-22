@@ -5,6 +5,12 @@ All notable changes to Dartform are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 Releases are also published on the [GitHub Releases page](https://github.com/Mobterest-Studio/dartform/releases) with downloadable DMG assets.
 
+If macOS blocks Dartform on first launch:
+1. Right-click Dartform.app → Open → Open
+   OR
+2. Run in Terminal:
+   xattr -dr com.apple.quarantine /Applications/Dartform.app
+
 ---
 
 ## [Unreleased]
