@@ -47,8 +47,7 @@ Dartform is available for **macOS** (Apple Silicon & Intel).
 
 | Asset | Architecture |
 |---|---|
-| `Dartform-x.x.x-arm64.dmg` | Apple Silicon (M1, M2, M3, M4) |
-| `Dartform-x.x.x-x86_64.dmg` | Intel |
+| `dartform-mac.dmg` | macOS Universal (Apple Silicon + Intel) |
 
 ### Installation
 
