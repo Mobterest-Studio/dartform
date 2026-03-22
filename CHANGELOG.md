@@ -23,8 +23,7 @@ Releases are also published on the [GitHub Releases page](https://github.com/Mob
 - Schema & data model visualization
 - Endpoint generator and postman-like tester
 - Team seat management — invite, revoke, and manage teammates
-- Magic-link sign-in via email (no password required)
-- Standard subscription plan — Monthly ($7/month) and Annual ($79/year)
+- Magic-link sign-in via email (no password required) 
 - 7-day free trial on all plans
 
 ---
