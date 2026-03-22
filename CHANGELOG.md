@@ -15,6 +15,13 @@ Releases are also published on the [GitHub Releases page](https://github.com/Mob
 
 ---
 
+## [1.0.1] — 2026-03-22
+
+### Added
+- Support for Custom Code and Dartform generated code for new and existing serverpod projects.
+
+---
+
 ## [1.0.0] — 2026-03-21
 
 ### Added
