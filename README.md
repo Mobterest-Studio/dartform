@@ -112,7 +112,7 @@ Use this repository to:
 | [GitHub Issues](https://github.com/Mobterest-Studio/dartform/issues) | Bug reports and feature requests |
 | [GitHub Discussions](https://github.com/Mobterest-Studio/dartform/discussions) | Questions, ideas, and community help |
 | [dartform.dev](https://dartform.dev) | Website and documentation |
-| [support@dartform.dev](mailto:support@dartform.dev) | Direct support |
+| [mobterest@gmail.com](mailto:mobterest@gmail.com) | Direct support |
 | [YouTube — Mobterest Studio](https://www.youtube.com/@mobtereststudio) | Tutorials and architecture content |
 
 ---
