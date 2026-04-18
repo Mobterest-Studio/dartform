@@ -20,6 +20,23 @@ If macOS blocks Dartform on first launch:
 - Linux build
 
 ---
+## [1.0.1] — 2026-04-19
+
+### Added
+- Dartform AI - helps you scaffold your backend with a prompt and Dartform automates the rest.
+
+### Bug Fixes
+- Initally relations defaulted to N:1
+- Endpoint methods were limited to 6, now they show all including custom methods
+- Accept configurations to other ports on Dartform other than the default Serverpod ports
+- Reset database feature (now applies migrations and starts the server)
+- ER AutoLayout feature spaces out evenly
+- Endpoint deleted when its model is deleted
+- Endpoint Tester were limited to 6 methods,  now they show all including custom methods
+- Model Update now reflect to other related models
+- Unnecessay addition of 'Id' and '?' concatenated at the end of a field
+
+
 
 ## [1.0.0] — 2026-03-21
 
