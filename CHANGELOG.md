@@ -17,7 +17,28 @@ If macOS blocks Dartform on first launch:
 
 ### Planned
 - Additional Serverpod module support
-- Linux build
+
+---
+## [1.0.3] — 2026-07-20
+
+### Added
+- Dart Shelf framework support — visual models, route scaffolding, a live REST tester, and database browsing, alongside Serverpod and Dart Frog.
+
+### Bug Fixes
+- Data Browser now surfaces the real database error on a failed add/edit/delete instead of silently reporting success when nothing actually happened.
+- Route tester auto-fill for date/time fields now generates a value the server can actually parse, instead of a generic string that produced a 500 error.
+- Add/Edit Row dialog now uses a proper date and time picker for timestamp columns, instead of requiring a hand-typed value with the correct timezone offset.
+- Fixed a crash when clearing a model's class name immediately after it had auto-populated the table name field.
+
+---
+## [1.0.2] — 2026-07-18
+
+### Added
+- Dart Frog framework support — visual models, endpoint scaffolding, a live REST tester, and database browsing, alongside Serverpod.
+- Linux platform support.
+
+### Changed
+- Switched to one-time lifetime pricing — pay once, own it forever, no subscription.
 
 ---
 ## [1.0.1] — 2026-04-19
@@ -51,5 +72,8 @@ If macOS blocks Dartform on first launch:
 
 ---
 
-[Unreleased]: https://github.com/Mobterest-Studio/dartform/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Mobterest-Studio/dartform/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/Mobterest-Studio/dartform/compare/v1.0.2...v1.0.3
+[1.0.2]: https://github.com/Mobterest-Studio/dartform/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/Mobterest-Studio/dartform/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/Mobterest-Studio/dartform/releases/tag/v1.0.0

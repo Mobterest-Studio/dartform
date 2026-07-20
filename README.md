@@ -4,10 +4,10 @@
 
 # Dartform
 
-**Visual IDE companion for Serverpod developers**
+**The multi-backend Dart developer platform for Dart and Flutter developers**
 
 [![Latest Release](https://img.shields.io/github/v/release/Mobterest-Studio/dartform?style=flat-square&color=38b6ff&label=latest)](https://github.com/Mobterest-Studio/dartform/releases/latest)
-[![Platform](https://img.shields.io/badge/platform-macOS-lightgrey?style=flat-square)](https://github.com/Mobterest-Studio/dartform/releases/latest)
+[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey?style=flat-square)](https://github.com/Mobterest-Studio/dartform/releases/latest)
 [![Issues](https://img.shields.io/github/issues/Mobterest-Studio/dartform?style=flat-square&color=38b6ff)](https://github.com/Mobterest-Studio/dartform/issues)
 [![License](https://img.shields.io/badge/license-Proprietary-lightgrey?style=flat-square)](https://dartform.dev/terms-of-use)
 
@@ -19,9 +19,9 @@
 
 ## What is Dartform?
 
-Dartform is a native macOS desktop application that gives Serverpod developers a **visual interface for their backend projects** — schema visualization, endpoint browsing, code generation, and project scaffolding — without living in the terminal.
+Dartform is a native desktop application that gives Dart and Flutter developers a **visual interface for their backend projects** — schema visualization, route/endpoint browsing, code generation, migrations, and project scaffolding — without living in the terminal.
 
-If you're building full-stack Dart applications with [Serverpod](https://serverpod.dev), Dartform is the IDE companion that makes your backend as visual as your Flutter frontend.
+Dartform supports three Dart backends today: [Serverpod](https://serverpod.dev), [Dart Frog](https://dartfrog.vgv.dev), and [Shelf](https://pub.dev/packages/shelf). Whichever one your project uses, Dartform gives you the same visual model editor, migration tooling, REST/RPC tester, and database browser.
 
 ---
 
@@ -29,48 +29,51 @@ If you're building full-stack Dart applications with [Serverpod](https://serverp
 
 | Feature | Description |
 |---|---|
-| 📁 **Project Management** | Open and manage multiple Serverpod projects from a single dashboard |
-| 🔍 **Schema Visualization** | Browse and explore your Serverpod data models visually |
-| ⚡ **Endpoint Generator and Tester** | Generate all your Serverpod endpoints with one-click and test them right on Dartform |
-| 🔧 **Code Generation** | Scaffold new models and endpoints without touching the CLI |
-| 🔐 **Database Tools** | Browse data, run SQL queries, manage migrations — all in one place. |
+| 📁 **Project Management** | Open and manage multiple projects — Serverpod, Dart Frog, or Dart Shelf — from a single dashboard |
+| 🔍 **Schema Visualization** | Browse and explore your data models visually |
+| ⚡ **Endpoint/Route Generator and Tester** | Generate endpoints or REST routes with one click and test them right in Dartform |
+| 🔧 **Code Generation** | Scaffold new models and endpoints/routes without touching the CLI |
+| 🔐 **Database Tools** | Browse data, run SQL queries, manage migrations — all in one place |
 
 ---
 
 ## Download
 
-Dartform is available for **macOS** (Apple Silicon & Intel).
+Dartform is available for **macOS** (Apple Silicon & Intel) and **Linux** (x86_64).
 
 ### Latest Release
 
-👉 **[Download the latest DMG →](https://github.com/Mobterest-Studio/dartform/releases/latest)**
+👉 **[Download the latest release →](https://github.com/Mobterest-Studio/dartform/releases/latest)**
 
-| Asset | Architecture |
+| Asset | Platform |
 |---|---|
 | `dartform-mac.dmg` | macOS Universal (Apple Silicon + Intel) |
+| `dartform-linux-x86_64.AppImage` | Linux x86_64 |
 
 ### Installation
 
-1. Download the `.dmg` file for your architecture
+**macOS:**
+1. Download the `.dmg` file
 2. Open the DMG and drag **Dartform.app** to your Applications folder
 3. On first launch, right-click the app → **Open** (required for unsigned apps on macOS)
 4. Sign in with your email — a magic link will be sent to your inbox
 5. You're in ✓
 
-> **Note:** Dartform is currently distributed as an unsigned DMG. macOS Gatekeeper will show a security warning on first launch. To bypass it, right-click the app and select **Open**, then confirm in the dialog. This is a one-time step.
+> **Note:** Dartform is currently distributed as an unsigned DMG. macOS Gatekeeper will show a security warning on first launch. To bypass it, right-click the app and select **Open**, then confirm in the dialog — a one-time step. Alternatively, run `xattr -dr com.apple.quarantine /Applications/Dartform.app` in Terminal.
+
+**Linux:**
+1. Download `dartform-linux-x86_64.AppImage`
+2. Make it executable and run it: `chmod +x dartform-linux-x86_64.AppImage && ./dartform-linux-x86_64.AppImage`
+3. Sign in with your email — a magic link will be sent to your inbox
+4. No installation or root required. Requires Docker Engine (not Docker Desktop) installed separately for the Postgres-backed project features.
 
 ---
 
-## Subscription
+## Pricing
 
-Dartform is available on a **Standard** subscription plan.
+Dartform is a **one-time purchase** — **Lifetime Access for $25**. No subscription, no recurring payment, and it includes every future update.
 
-| Plan | Price | Trial |
-|---|---|---|
-| Monthly | $7 / month | 7-day free trial |
-| Annual | $79 / year | 7-day free trial |
-
-👉 **[Get your subscription on Gumroad →](https://mobterestudio.gumroad.com/l/dartform)**
+👉 **[Get Lifetime Access on Gumroad →](https://mobterestudio.gumroad.com/l/dartform-lifetime-access)**
 
 ---
 
@@ -78,10 +81,9 @@ Dartform is available on a **Standard** subscription plan.
 
 | Requirement | Minimum |
 |---|---|
-| macOS | 13.0 Ventura or later |
-| Architecture | Apple Silicon or Intel |
-| Disk space | ~120 MB |
-| Internet | Required for sign-in and license validation |
+| Operating System | macOS 13.0 Ventura or later, or Linux x86_64 on a systemd-based distro |
+| Dependencies | Docker (Docker Desktop on macOS, Docker Engine on Linux) and the Dart SDK, plus the CLI for whichever framework you use — Serverpod CLI or Dart Frog CLI. Dart Shelf needs neither, just the Dart SDK |
+| Disk space | ~200 MB |
 
 ---
 
